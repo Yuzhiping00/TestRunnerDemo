@@ -8,9 +8,4 @@
 		"name":"check", 
 		"password": "check"
 	},
-
-	{
-		"name":"ping", 
-		"password": "ping"
-	}
 ]
