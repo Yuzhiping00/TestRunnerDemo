@@ -40,4 +40,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run API tests
-        run: newman run ApiTest/NewmanIntoGithubActions.postman_collection.json -d ApiTest/data.json
+        run: newman run ApiTest/NewmanIntoGithubActions.postman_collection.json -d ApiTest/data.json -e ApiTest/Integration Environment.postman_environment.json
