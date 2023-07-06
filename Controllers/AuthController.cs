@@ -16,10 +16,10 @@ namespace TestRunnerDemo.Controllers
         [Route("login")]
         public async Task<IActionResult> LoginAsync([FromBody] LoginDto loginDto)
         {
-            if (loginDto is not { Name: "test", Password: "test" })
+            if (loginDto is not { Name: "test", Password: "test" } && loginDto is not { Name: "check", Password: "check" })
             {
                 return this.Unauthorized();
-            }
+            } 
 
             var claims = new List<Claim>
             {
