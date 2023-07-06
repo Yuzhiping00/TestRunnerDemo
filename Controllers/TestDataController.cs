@@ -33,8 +33,10 @@ namespace TestRunnerDemo.Controllers
         }
 
         [HttpDelete]
+        [Authorize]
         public ActionResult Delete()
         {
+
             return new ContentResult
             {
                 StatusCode = 400,
